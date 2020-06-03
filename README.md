@@ -10,12 +10,12 @@ Golang client for [cveapi](https://cveapi.com/) API
 package main
 
 import (
-    "log"
+    "fmt"
     "github.com/viiftw/cveapi-go"
 )
 
 func main() {
-  client := NewClient()
+  client := cveapi.NewClient()
 
   // get cve data
   cveID := "CVE-2019-9956"
